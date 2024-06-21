@@ -644,7 +644,7 @@ check_again:
 						gnutls_strerror(err));
 				goto err;
 			}
-			purpose_oid[purpose_oid_size - 1] = '\0';
+			purpose_oid[purpose_oid_size] = '\0';
 			if (!strcmp(purpose_oid,
 					NTFS_EFS_CERT_PURPOSE_OID_DRF))
 				*df_type = DF_TYPE_DRF;
